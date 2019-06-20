@@ -1,0 +1,711 @@
+/* CSS Document */
+
+
+/* Style Image */
+.containerAA {
+  position: relative;
+  width: 100%;
+}
+
+.imageAA {
+  display: block;
+  width: 180px;
+  height: 230px;
+}
+
+.overlayAA {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:#060A12;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity: 0.8;
+}
+
+.containerAA:hover .overlayAA {
+  bottom: 0;
+  height: 100%;
+}
+
+.textAA {
+  white-space: nowrap; 
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Search Bar */
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container
+{
+	
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+ 	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container
+{
+	border: 2px #ccc solid;
+    float: none;
+ }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 2px solid #ccc;  
+  }
+}
+
+
+
+
+
+
+/* Menu Full Screen */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FFFFFF;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+
+
+
+/*Slider CSS*/
+.mySlides {display:none;}
+
+/*WOW CSS*/
+.wow:first-child {
+      visibility: hidden;
+    }
+/* Layout Home */
+.trangchu
+{
+	width: 1280px;
+	height: auto;
+	background-color: #060A12;
+	margin: 0 auto;	
+}
+ .clearCC
+{	clear: both;}
+
+
+/* Layout Slider */
+.header
+{
+	width: 1280px;
+	height: 720px;
+}
+
+.slide
+{
+	width: 1280px;
+	height: 720px;
+	position: relative;
+	z-index: 1;
+}
+
+.thanhmenu
+{
+	width: 1280px;
+	height: 54px;
+	position: absolute;
+	z-index: 13;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 20px 1px #0A141D;
+}
+
+.thanhmenueffect
+{
+	width: 1280px;
+	height: 54px;
+	background-color:#0A141D;
+	position: absolute;
+	z-index: 12;
+	opacity: 0.5;
+	filter: blur(2px);
+	
+}
+
+.logoDM
+{
+	width: 129px;
+	height: 35px;
+	margin: 0px 400px 0px 216px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.searching
+{
+	width: 267px;
+	height: 27px;
+	border-radius: 20px;
+	
+}
+
+.search
+{
+	width: 267px;
+	height: 27px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.payment
+{
+	width: 85px;
+	height: 20px;
+}
+
+.payment ul
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.payment ul li
+{
+	float: left;
+	padding: 0px 35px 0px 0px;
+	margin: 0px;
+}
+
+
+/* Layout Content Game */
+.contentweb
+{
+	width: 1280px;
+	height: 1551px;
+	position: relative;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+ 	align-items: center;
+	z-index: 2;
+}
+
+.contentwebimg
+{
+	width: 1280px;
+	height: 1551px;
+	position: absolute;
+	z-index: 1;
+
+	
+}
+
+/* Layout Content Game New */
+.gamenew
+{
+	width: 980px;
+	height: 282px;
+	margin-top: 100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	z-index: 12;
+}
+
+.gamenewplace
+{
+	width: 980px;
+	height: 230px;
+	position: relative;
+	z-index: 499;
+}
+
+.gamefont1
+{
+	width: 980px;
+	height: 282px;
+	position: absolute;
+	z-index: 12;	
+	color: #FFFFFF;
+ 	font-family: "Montserrat";
+  	src: url(../font/Montserrat-ExtraBoldItalic.otf)format("truetype");
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold; 
+	padding-left: 16px;
+}
+
+
+
+
+/* Layout Content Game Best Seller */
+.bestselller
+{
+	width: 1066px;
+	height: 552px;
+	margin-top: 150px;
+	z-index: 20;
+	display: flex;
+  	justify-content: center;
+  	align-items: flex-end;
+}
+
+.gameselller
+{
+	width: 1066px;
+	height: 500px;
+	position: relative;
+	z-index: 24;
+}
+
+.gameinfo
+{
+	width: 1066px;
+	height: 328px;
+	box-shadow: 0 4px 20px 1px black;
+	position: absolute;
+	z-index: 26;
+	margin-top: 172px;
+	display: flex;
+	justify-content: flex-end;	
+	padding-right: 55px;
+}
+
+.gameinfotext
+{
+	width: 372px;
+	height: 268px;
+	padding-right: 50px;
+	position: absolute;
+	z-index: 26;
+	
+	
+}
+.gameinfoeffect
+{
+	width: 1066px;
+	height: 328px;
+	background-color:#0A141D;
+	position: absolute;
+	z-index: 25;
+	margin-top: 172px;
+	opacity: 0.5;
+	filter: blur(1px);
+}
+
+.gameinfoimg
+{
+	width: 517px;
+	height: 440px;
+	position: absolute;
+	z-index: 600;	
+	margin-left: 50px;	
+}
+
+.gameinfoimg img
+{
+	transition: all 2s linear;
+	opacity: 1;
+}
+
+.gameinfoimg:hover img
+{
+	opacity: 0.2;
+}
+
+
+.gamefont2
+{
+	width: 1066px;
+	height: 552px;
+	position: absolute;
+	padding-left: 50px;
+	z-index: 23;	
+	color: #FFFFFF;
+ 	font-family: "Montserrat";
+  	src: url(../font/Montserrat-ExtraBoldItalic.otf)format("truetype");
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.BStext1
+{
+	width: 372px;
+	height: 90px;
+}
+
+.BStext1A
+{
+	width: 260px;
+	height: 90px;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+  	src: url(../font/Montserrat-SemiBold.otf)format("truetype");
+	font-size: 26px;
+	font-weight: bold;
+	float: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.BStext1B
+{
+	width: 112px;
+	height: 90px;
+	float: right;
+}
+
+.BStext2
+{
+	width: 372px;
+	height: 142px;	
+}
+
+.BStext2A
+{
+	width: 100px;
+	height: 122px;
+	color:#21A8C1;
+	font-family: "Montserrat";
+  	src: url(../font/Montserrat-SemiBoldItalic.otf)format("truetype");
+	font-size: 9px;
+	font-style: italic;
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 20px;
+	float: left;
+}
+
+.BStext2B
+{
+	width: 272px;
+	height: 122px;
+	color:#21A8C1;
+	font-family: "Montserrat";
+  	src: url(../font/Montserrat-SemiBoldItalic.otf)format("truetype");
+	font-size: 9px;
+	font-style: italic;
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;	
+	margin-top: 20px;
+	float: right;
+}
+
+.BStext3
+{
+	width: 372px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.BStext3A
+{
+	width: 93px;
+	height: 21px;
+	
+}
+
+.BStext3B
+{
+	width: 155px;
+	height: 36px;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+  	src: url(../font/Montserrat-ExtraBold.otf)format("truetype");
+	font-size: 26px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.BStext3C
+{
+	width: 124px;
+	height: 36px;
+	background-color: #92CF15;
+	border-radius: 5px;
+	border-color: #92CF15;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+  	src: url(../font/Montserrat-ExtraBold.otf)format("truetype");
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* Layout Content Game Hot */
+.gamehot
+{
+	width: 980px;
+	height: 282px;
+	margin-top: 125px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	z-index: 12;
+}
+
+.gameitem2
+{
+	width: 180px;
+	height: 230px;
+	float: left;
+	margin: 0px 8px 0px 8px;
+	box-shadow: 0 4px 20px 2px #0A141D;
+	position: relative;
+	z-index: 500;
+	
+}
+
+.gameitem2 img
+{
+	transition: all 1s linear;
+	transform: scale(1);
+	
+}
+
+.gameitem2:hover img
+{
+	transform: scale(0.9);
+}
+
+
+.gamefont3
+{
+	width: 980px;
+	height: 282px;
+	position: absolute;
+	z-index: 12;	
+	color: #FFFFFF;
+ 	font-family: "Montserrat";
+  	src: url(../font/Montserrat-ExtraBoldItalic.otf)format("truetype");
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold;
+	padding-left: 16px;
+	z-index: 13;
+}
+
+
+
+/* Layout Footer */
+.footerpart
+{
+	width: 1280px;
+	height: 265px;	
+	position: relative;
+	z-index: 1;	
+	box-shadow: 0 -4px 20px 2px #0A141D;
+	margin-top: 150px;
+}
+
+.footertext
+{
+	width: 1280px;
+	height: 265px;
+	position: relative;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footereffect
+{
+	width: 1280px;
+	height: 265px;
+	background-color:#0A141D;
+	position: absolute;
+	z-index: 2;
+	filter: blur(1px);
+	opacity: 0.5;
+	margin-top: 150px;
+	
+}
+
+
+
+/*Game new*/
+.gamenews
+{
+	width: 1280px;
+	height: 282px;
+	margin-top: 250px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	z-index: 2;
+}
+
+.gameitem4
+{
+	width: 180px;
+	height: 230px;
+	float: left;
+	margin: 0px 8px 0px 8px;
+	box-shadow: 0 4px 20px 2px #0A141D;
+	position: relative;
+	z-index: 4;
+}
+
+.gameitem4 img
+{
+	transition: all 1s linear;
+	transform: scale(1);
+	
+}
+
+.gameitem4:hover img
+{
+	transform: scale(0.9);
+}
+
+
+.gamefont4
+{
+	width: 980px;
+	height: 282px;
+	position: absolute;
+	z-index: 1;	
+	color: #FFFFFF;
+ 	font-family: "Montserrat";
+  	src: url(../font/Montserrat-ExtraBoldItalic.otf)format("truetype");
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold;
+	padding-left: 16px;
+	
+}
